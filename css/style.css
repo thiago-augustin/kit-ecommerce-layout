@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,13 +14,13 @@ body {
   width: 100%;
 }
 
-.image-container {
+.authentication .image-container {
   width: 100%;
   height: 60vh;
   background-color: #FFA451;
 }
 
-.image-container .content-image {
+.authentication .image-container .content-image {
   margin: 0 10%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -32,7 +33,7 @@ body {
   position: relative;
 }
 
-.image-container .content-image .basket {
+.authentication .image-container .content-image .basket {
   height: 60%;
   position: absolute;
   top: 65%;
@@ -41,7 +42,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.formulary {
+.authentication .formulary {
   position: relative;
   width: 80%;
   height: 22vh;
@@ -49,12 +50,12 @@ body {
   padding-top: 1.5em;
 }
 
-.formulary form {
+.authentication .formulary form {
   position: relative;
   height: 100%;
 }
 
-.formulary form label {
+.authentication .formulary form label {
   display: block;
   font-size: 1.1em;
   font-weight: bold;
@@ -62,7 +63,7 @@ body {
   color: #27214D;
 }
 
-.formulary form input.input-name {
+.authentication .formulary form input.input-name {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #F3F1F1;
@@ -74,27 +75,27 @@ body {
   border-radius: 10px;
 }
 
-.formulary form input.input-name::-webkit-input-placeholder {
+.authentication .formulary form input.input-name::-webkit-input-placeholder {
   color: #C2BDBD;
   letter-spacing: 0.08em;
 }
 
-.formulary form input.input-name:-ms-input-placeholder {
+.authentication .formulary form input.input-name:-ms-input-placeholder {
   color: #C2BDBD;
   letter-spacing: 0.08em;
 }
 
-.formulary form input.input-name::-ms-input-placeholder {
+.authentication .formulary form input.input-name::-ms-input-placeholder {
   color: #C2BDBD;
   letter-spacing: 0.08em;
 }
 
-.formulary form input.input-name::placeholder {
+.authentication .formulary form input.input-name::placeholder {
   color: #C2BDBD;
   letter-spacing: 0.08em;
 }
 
-.formulary form input.button-start {
+.authentication .formulary form input.button-start {
   position: absolute;
   background-color: #FFA451;
   border: none;
@@ -108,17 +109,83 @@ body {
   font-size: 14px;
 }
 
-body .loading-image {
+.loading .loading-image {
   width: 100%;
   height: 100%;
 }
 
-body .loading-image .logo {
+.loading .loading-image .logo {
   width: 85%;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.welcome .image-container {
+  width: 100%;
+  height: 60vh;
+  background-color: #FFA451;
+}
+
+.welcome .image-container .content-image {
+  margin: 0 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+.welcome .image-container .content-image .basket {
+  height: 60%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.welcome .formulary {
+  position: relative;
+  width: 80%;
+  height: 22vh;
+  margin: 10% 10%;
+  padding-top: 1.5em;
+}
+
+.welcome .formulary h1 {
+  color: #27214D;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.welcome .formulary h2 {
+  color: #5d577e;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+.welcome .formulary button {
+  position: absolute;
+  background-color: #FFA451;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 4em;
+  right: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
