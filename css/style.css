@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  height: 100%;
+  width: 100%;
+}
+
+.image-container {
+  width: 100%;
+  height: 60vh;
+  background-color: #FFA451;
+}
+
+.image-container .content-image {
+  margin: 0 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+
+.image-container .content-image .basket {
+  height: 60%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.formulary {
+  position: relative;
+  width: 80%;
+  height: 22vh;
+  margin: 10% 10%;
+  padding-top: 1.5em;
+}
+
+.formulary form {
+  position: relative;
+  height: 100%;
+}
+
+.formulary form label {
+  display: block;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  color: #27214D;
+}
+
+.formulary form input.input-name {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #F3F1F1;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 1.1em;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.formulary form input.input-name::-webkit-input-placeholder {
+  color: #C2BDBD;
+  letter-spacing: 0.08em;
+}
+
+.formulary form input.input-name:-ms-input-placeholder {
+  color: #C2BDBD;
+  letter-spacing: 0.08em;
+}
+
+.formulary form input.input-name::-ms-input-placeholder {
+  color: #C2BDBD;
+  letter-spacing: 0.08em;
+}
+
+.formulary form input.input-name::placeholder {
+  color: #C2BDBD;
+  letter-spacing: 0.08em;
+}
+
+.formulary form input.button-start {
+  position: absolute;
+  background-color: #FFA451;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 4em;
+  right: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
