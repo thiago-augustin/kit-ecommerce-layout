@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -594,5 +595,411 @@ body {
 
 .home .slider .card:nth-of-type(5) {
   background-color: #F0FAEB;
+}
+
+.order {
+  /*.items .item .image {
+            &:nth-of-type(1){
+                background-color: $quinoa-background-color;
+            }
+            &:nth-of-type(2){
+                background-color: $melon-background-color;
+            }
+            &:nth-of-type(3){
+                background-color: $tropical-background-color;
+            }
+        }*/
+}
+
+.order header {
+  background-color: #FFA451;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+}
+
+.order header .back-button {
+  border: none;
+  width: 20vw;
+  height: 4vh;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  position: relative;
+  left: 2vw;
+  top: 5.5vh;
+}
+
+.order header .back-button img {
+  height: 60%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order header .back-button a {
+  width: 15vw;
+  position: absolute;
+  left: 11vw;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000000;
+  text-decoration: none;
+}
+
+.order header h1 {
+  color: #FFFFFF;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order .items {
+  margin: 18vh 0 0 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.order .items .item {
+  border-bottom: 2px solid #F3F1F1;
+  width: 100%;
+  height: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+.order .items .item .image {
+  margin-left: 5%;
+  position: relative;
+  border-radius: 10px;
+  width: 25vw;
+  height: 100%;
+}
+
+.order .items .item .image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.order .items .description {
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1em;
+}
+
+.order .items .description h3 {
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+
+.order .items .description h4 {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.order .items .price {
+  height: 100%;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order .items .price img {
+  width: 1.2em;
+}
+
+.order .items .price h2 {
+  font-size: 1.2em;
+  padding-left: 0.2em;
+  color: #27214D;
+}
+
+.order footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.order footer .price {
+  margin-left: 5%;
+  width: 40%;
+  height: 100%;
+}
+
+.order footer .price h2 {
+  font-size: 1.2em;
+}
+
+.order footer .price h1 img {
+  height: 0.7em;
+}
+
+.order footer .button {
+  margin-right: 5%;
+  width: 60%;
+  height: 100%;
+}
+
+.order footer .button button {
+  background: #FFA451;
+  border: none;
+  height: 4em;
+  width: 100%;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.order .modal-details {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.order .modal-details .modal-content {
+  border-radius: 20px 20px 0 0;
+  z-index: 10;
+  margin-top: 40vh;
+  position: relative;
+  height: 60vh;
+  background-color: white;
+}
+
+.order .modal-details .modal-content .cancel {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order .modal-details .formulary {
+  width: 90%;
+  height: 90%;
+  padding-top: 15%;
+  margin: 5% 5% 5% 5%;
+}
+
+.order .modal-details .formulary form label {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #27214D;
+  padding-bottom: 1em;
+}
+
+.order .modal-details .formulary form input {
+  width: 95%;
+  height: 4em;
+  border-radius: 10px;
+  border: none;
+  background-color: #F3F1F1;
+  font-size: 1.2em;
+  padding-left: 5%;
+  margin-bottom: 10%;
+}
+
+.order .modal-details .formulary form input::-webkit-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-details .formulary form input:-ms-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-details .formulary form input::-ms-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-details .formulary form input::placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-details .formulary form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order .modal-details .formulary form .buttons button {
+  display: inline;
+  width: 40%;
+  height: 4em;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid #FFA451;
+  color: #FFA451;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.order .modal-card {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.order .modal-card .modal-content {
+  border-radius: 20px 20px 0 0;
+  z-index: 10;
+  margin-top: 40vh;
+  position: relative;
+  height: 60vh;
+  background-color: white;
+}
+
+.order .modal-card .modal-content .cancel {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.order .modal-card .modal-content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2em;
+  background-color: #FFA451;
+}
+
+.order .modal-card .modal-content .buttons button {
+  display: inline;
+  width: 40%;
+  height: 4em;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #FFA451;
+  color: #FFA451;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.order .modal-card .formulary {
+  width: 90%;
+  height: 60%;
+  padding-top: 15%;
+  margin: 5% 5% 5% 5%;
+}
+
+.order .modal-card .formulary form label {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #27214D;
+  padding-bottom: 0.8em;
+}
+
+.order .modal-card .formulary form input {
+  width: 95%;
+  height: 3em;
+  border-radius: 10px;
+  border: none;
+  background-color: #F3F1F1;
+  font-size: 1em;
+  padding-left: 5%;
+  margin-bottom: 5%;
+}
+
+.order .modal-card .formulary form input::-webkit-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-card .formulary form input:-ms-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-card .formulary form input::-ms-input-placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-card .formulary form input::placeholder {
+  color: #C2BDBD;
+  font-size: 1em;
+}
+
+.order .modal-card .formulary form .shorts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.order .modal-card .formulary form .shorts .date {
+  width: 40%;
+}
+
+.order .modal-card .formulary form .shorts .ccv {
+  width: 40%;
 }
 /*# sourceMappingURL=style.css.map */

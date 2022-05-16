@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="order">
+    <header>
+        <div class="back-button">
+            <img src="images/back.svg" alt="">
+            <a href="">Go back</a>
+        </div>
+        <h1>My Basket</h1>
+    </header>
+    <section class="items">
+        <div class="item">
+            <div class="image" style="background-color: #FFFAEB;">
+                <img src="images/breakfast-quinoa-and-red-fruit-salad-134061-1-removebg-preview 1.png" alt="">
+            </div>
+            <div class="description">
+                <h3>Quinoa fruit salad</h3>
+                <h4>2packs</h4>
+            </div>
+            <div class="price">
+                <img src="images/money-blue.svg" alt="">
+                <h2>20,000</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image" style="background-color: #F1EFF6;">
+                <img src="images/BerryWorld-Kiwiberry-Fruit-Salad-LS-removebg-preview 1.png" alt="">
+            </div>
+            <div class="description">
+                <h3>Melon fruit salad</h3>
+                <h4>2packs</h4>
+            </div>
+            <div class="price">
+                <img src="images/money-blue.svg" alt="">
+                <h2>20,000</h2>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image" style="background-color: #FEF0F0;">
+                <img src="images/Best-Ever-Tropical-Fruit-Salad8-WIDE-removebg-preview 1.png" alt="">
+            </div>
+            <div class="description">
+                <h3>Tropical fruit salad</h3>
+                <h4>2packs</h4>
+            </div>
+            <div class="price">
+                <img src="images/money-blue.svg" alt="">
+                <h2>20,000</h2>
+            </div>
+        </div>
+    </section>
+    <div id="modal-details" class="modal-details" tabindex="1">
+        <div class="modal-content">
+            <div class="cancel">
+                <img src="images/Cancel.svg" alt="" onclick="closeModal('modal-details');"  autocomplete="off">
+            </div>
+            <div class="formulary">
+                <form action="#">
+                    <label for="adress">
+                        Delivery adress
+                    </label>
+                    <input type="text" placeholder="10th avenue, Lekki, Lagos State"  autocomplete="off">
+                    <label for="telephone">
+                        Number we can call
+                    </label>
+                    <input type="number" placeholder="09090605708">
+                    <div class="buttons">
+                        <button onclick="closeModal('modal-details');">Pay on delivery</button>
+                        <button onclick="openCardModal('modal-card');">Pay with card</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="modal-card" class="modal-card" tabindex="1">
+        <div class="modal-content">
+            <div class="cancel">
+                <img src="images/Cancel.svg" alt="" onclick="closeModal('modal-card');">
+            </div>
+            <div class="formulary">
+                <form action="">
+                    <label for="name">
+                        Card Holders Name
+                    </label>
+                    <input name="name" type="text" placeholder="Adolphus Chris" autocomplete="off">
+                    <label for="card-number">
+                        Card Number
+                    </label>
+                    <input name="card-number" type="number" placeholder="1234 5678 9012 1314"  autocomplete="off">
+                    <div class="shorts">
+                        <div class="date">
+                            <label for="date">
+                                Date
+                            </label>
+                            <input name="date" type="text" placeholder="10/30" class="short"  autocomplete="off">
+                        </div>
+                        <div class="ccv">
+                            <label for="ccv">
+                                CCV
+                            </label>
+                            <input name="ccv" type="number" placeholder="123" class="short" autocomplete="off">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <button onclick="closeModal('modal-card');">Complete Order</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="price">
+            <h2>Total</h2>
+            <h1><img src="images/money-black.svg" alt="">60,000</h1>
+        </div>
+        <div class="button">
+            <button onclick="openModal('modal-details');">Checkout</button>
+        </div>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

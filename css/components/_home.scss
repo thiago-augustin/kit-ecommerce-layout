@@ -255,19 +255,19 @@
                 }
             }
             &:nth-of-type(1){
-                background-color: #FFFAEB;
+                background-color: $quinoa-background-color;
             }
             &:nth-of-type(2){
-                background-color: #FEF0F0;
+                background-color: $tropical-background-color;
             }
             &:nth-of-type(3){
-                background-color: #F1EFF6;
+                background-color: $melon-background-color;
             }
             &:nth-of-type(4){
-                background-color: #E9ECFF;
+                background-color: $honey-background-color;
             }
             &:nth-of-type(5){
-                background-color: #F0FAEB;
+                background-color: $berry-background-color;
             }
         }
     }
