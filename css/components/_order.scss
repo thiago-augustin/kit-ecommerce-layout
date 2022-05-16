@@ -200,21 +200,21 @@
                         font-size: 1em;
                     }
                 }
-                .buttons {
-                    display: flex;
-                    width: 100%;
-                    justify-content: space-between;
-                    button {
-                        display: inline;
-                        width: 40%;
-                        height: 4em;
-                        border-radius: 10px;
-                        background-color: transparent;
-                        border: 2px solid $primary-color;
-                        color: $primary-color;
-                        font-weight: bold;
-                        font-size: 1em;
-                    }
+            }
+            .buttons {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                button {
+                    display: inline;
+                    width: 40%;
+                    height: 4em;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    border: 2px solid $primary-color;
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-size: 1em;
                 }
             }
         }

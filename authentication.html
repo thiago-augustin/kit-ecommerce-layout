@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Hub</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/redirect.js"></script>
 </head>
 <body class="authentication">
     <div class="image-container">
@@ -14,12 +15,11 @@
         </div>
     </div>
     <div class="formulary">
-        <form action="POST">
+        <form action="#">
             <label for="name">What is your firstname?</label>
             <input type="text" class="input-name" name="name" id="name" placeholder="Tony">
-
-            <input type="submit" class="button-start" value="Start Ordering">
         </form>
+        <button class="button-start" onclick="home();">Start Ordering</button>
     </div>
 </body>
 </html>

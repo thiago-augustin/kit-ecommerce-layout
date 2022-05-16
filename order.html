@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Hub</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/modal.js"></script>
+    <script src="js/redirect.js"></script>
 </head>
 <body class="order">
     <header>
@@ -71,11 +73,11 @@
                         Number we can call
                     </label>
                     <input type="number" placeholder="09090605708">
-                    <div class="buttons">
-                        <button onclick="closeModal('modal-details');">Pay on delivery</button>
-                        <button onclick="openCardModal('modal-card');">Pay with card</button>
-                    </div>
                 </form>
+                <div class="buttons">
+                    <button onclick="complete();">Pay on delivery</button>
+                    <button onclick="openCardModal('modal-card');">Pay with card</button>
+                </div>
             </div>
         </div>
     </div>
@@ -111,7 +113,7 @@
                 </form>
             </div>
             <div class="buttons">
-                <button onclick="closeModal('modal-card');">Complete Order</button>
+                <button onclick="complete();">Complete Order</button>
             </div>
         </div>
     </div>
@@ -124,6 +126,5 @@
             <button onclick="openModal('modal-details');">Checkout</button>
         </div>
     </footer>
-    <script src="js/modal.js"></script>
 </body>
 </html>

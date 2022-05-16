@@ -54,19 +54,19 @@
                 color: $placeholder-font;
                 letter-spacing: 0.08em;
             }
-            input.button-start {
-                position: absolute;
-                background-color: $primary-color;
-                border: none;
-                border-radius: 10px;
-                width: 100%;
-                height: 4em;
-                right: 0;
-                bottom: 0;
-                color: $secondary-color;
-                font-weight: bold;
-                font-size: 14px;
-            }
+        }
+        .button-start {
+            position: absolute;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            height: 4em;
+            right: 0;
+            bottom: 0;
+            color: $secondary-color;
+            font-weight: bold;
+            font-size: 14px;
         }
     }
 }
