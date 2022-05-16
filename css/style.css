@@ -504,19 +504,37 @@ body {
   top: 0.5em;
 }
 
-.home .slider .card .apresentation img {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.home .slider .card .apresentation .image {
+  position: relative;
+  width: 100%;
+  height: 60%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.home .slider .card .apresentation .image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 60%;
-  padding: 5%;
+  margin: auto auto;
+  vertical-align: center;
 }
 
 .home .slider .card .apresentation h2 {
   color: #27214D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   font-size: 0.9em;
   padding: 0 0.5em;
 }

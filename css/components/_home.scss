@@ -202,14 +202,26 @@
                     right: 0.5em;
                     top: 0.5em;
                 }
-                img {
-                    justify-content: center;
+                .image {
+                    position: relative;
+                    width: 100%;
+                    height: 60%;
                     align-items: center;
-                    width: 60%;
-                    padding: 5%;
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        width: 60%;
+                        margin: auto auto;
+                        vertical-align: center;
+                    }
                 }
                 h2 {
                     color: $font-color;
+                    display: flex;
+                    align-items: baseline;
                     font-size: 0.9em;
                     padding: 0 0.5em;
                 }
