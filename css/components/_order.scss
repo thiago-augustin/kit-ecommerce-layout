@@ -1,42 +1,38 @@
 @import "../abstract/variables";
 
 .order {
+    height: 100vh;
+    width: 100vw;
     header {
         background-color: $primary-color;
         position: absolute;
         right: 0;
         top: 0;
         width: 100%;
-        height: 15vh;
-        .back-button {
-            border: none;
-            width: 20vw;
-            height: 4vh;
-            background-color: $secondary-color;
-            border-radius: 50px;
-            position: relative;
-            left: 2vw;
-            top: 5.5vh;
-            img {
-                height: 60%;
+        height: 15%;
+        .button {
+            .back-button {
+                border: none;
+                width: 25%;
+                height: 3em;
+                background-color: $secondary-color;
+                border-radius: 50px;
                 position: absolute;
-                left: 10%;
+                left: 5%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(0, -50%);
+                img {
+                    height: 50%;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                } 
             }
-            a {
-                width: 15vw;
-                position: absolute;
-                left: 11vw;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                color: $color-black;
-                text-decoration: none;
-            }
-
         }
         h1 {
             color: $secondary-color;
+            font-size: 1.5em;
             font-weight: 500;
             position: absolute;
             left: 50%;
@@ -46,9 +42,10 @@
     }
 
     .items {
-        margin: 18vh 0 0 0;
-        height: 100%;
-        width: 100%;
+        padding-top: 15vh;
+        margin: 5%;
+        height: 80%;
+        width: 90%;
         overflow-y: scroll;
         .item {
             border-bottom: 2px solid $tertiary-color;
@@ -58,7 +55,6 @@
             margin-bottom: 1.5em;
             padding-bottom: 1em;
             .image {
-                margin-left: 5%;
                 position: relative;
                 border-radius: 10px;
                 width: 25vw;
@@ -74,7 +70,7 @@
         }
         .description {
             height: 100%;
-            width: 40%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -94,10 +90,10 @@
             display: flex;
             align-items: center;
             img {
-                width: 1.2em;
+                width: 1em;
             }
             h2 {
-                font-size: 1.2em;
+                font-size: 1em;
                 padding-left: 0.2em;
                 color: $font-color;
             }
@@ -119,6 +115,7 @@
 
     footer {
         position: fixed;
+        background-color: $secondary-color;
         bottom: 0;
         right: 0;
         width: 100%;
@@ -129,10 +126,13 @@
             width: 40%;
             height: 100%;
             h2 {
-                font-size: 1.2em;
+                font-size: 1em;
             }
-            h1 img {
-                height: 0.7em;
+            h1 {
+                font-size: 1.5em;
+                img {
+                    height: 0.8em;
+                }
             }
         }
         .button {
