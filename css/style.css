@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -511,6 +512,7 @@ body {
 }
 
 .home .slider {
+  background-color: black;
   width: 100%;
   overflow: scroll;
   display: -webkit-box;
@@ -1304,5 +1306,199 @@ body {
 
 .track .content .map img {
   width: 100%;
+}
+
+.add {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFA451;
+}
+
+.add header {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 15%;
+}
+
+.add header .button .back-button {
+  border: none;
+  width: 22vw;
+  height: 2.5em;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 0.8em;
+}
+
+.add header .button .back-button img {
+  height: 40%;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.add .image-container {
+  margin: 5%;
+  width: 90%;
+  height: 30vh;
+  position: relative;
+}
+
+.add .image-container .image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.add .image-container .image img {
+  width: 50vw;
+}
+
+.add .content {
+  background-color: #FFFFFF;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 70vh;
+}
+
+.add .content .content-container {
+  margin: 5%;
+  width: 90%;
+  padding-top: 5%;
+}
+
+.add .content .content-container .info h1 {
+  width: 100%;
+  color: #27214D;
+  font-size: 1.8em;
+}
+
+.add .content .content-container .info .numbers {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add .content .content-container .info .numbers .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add .content .content-container .info .numbers .quantity img {
+  width: 1.5em;
+}
+
+.add .content .content-container .info .numbers .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  color: #27214D;
+  font-size: 1em;
+}
+
+.add .content .content-container .info .numbers .price img {
+  width: 1.5em;
+}
+
+.add .content .content-container .description {
+  width: 100%;
+}
+
+.add .content .content-container .description h3 {
+  color: #27214D;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FFA451;
+          text-decoration-color: #FFA451;
+  text-decoration-thickness: 15%;
+  margin-bottom: 10%;
+  font-size: 1.3rem;
+}
+
+.add .content .content-container .description h4 {
+  color: #27214D;
+  line-height: 1.5em;
+  padding-bottom: 8%;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #F3F1F1;
+}
+
+.add .content .content-container .description h5 {
+  padding-top: 8%;
+  color: #27214D;
+  line-height: 1.5em;
+  margin-bottom: 20%;
+  font-size: 0.8rem;
+}
+
+.add footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add footer .image {
+  height: 15vw;
+  width: 15vw;
+}
+
+.add footer .image .heart {
+  width: 20vw;
+  height: 20vw;
+}
+
+.add footer .image .heart img {
+  height: 100%;
+}
+
+.add footer .button {
+  height: 100%;
+  width: 75vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

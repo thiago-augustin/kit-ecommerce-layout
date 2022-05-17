@@ -27,3 +27,8 @@ function track() {
     console.log("Redirecionado");
     window.location.href = 'http://127.0.0.1:5500/track.html?#';
 }
+
+function add() {
+    console.log("Redirecionado");
+    window.location.href = 'http://127.0.0.1:5500/add.html?#';
+}

@@ -1,0 +1,149 @@
+@import "../abstract/variables";
+
+.add {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-color;
+    header {
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 15%;
+        .button {
+            .back-button {
+                border: none;
+                width: 22vw;
+                height: 2.5em;
+                background-color: $secondary-color;
+                border-radius: 50px;
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 0.8em;
+                img {
+                    height: 40%;
+                    position: absolute;
+                    left: 10%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                } 
+            }
+        }
+    }
+
+    .image-container {
+        margin: 5%;
+        width: 90%;
+        height: 30vh;
+        position: relative;
+        .image {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            img {
+                width: 50vw;
+            }
+        }
+    }
+
+    .content {
+        background-color: $secondary-color;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
+        height: 70vh;
+        .content-container {
+            margin: 5%;
+            width: 90%;
+            padding-top: 5%;
+            .info {
+                h1 {
+                    width: 100%;
+                    color: $font-color;
+                    font-size: 1.8em;
+                }
+                .numbers {
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .quantity {
+                        display: flex;
+                        flex-direction: row;
+                        width: 40%;
+                        justify-content: space-between;
+                        img {
+                            width: 1.5em;
+                        }
+                    }
+                    .price {
+                        display: flex;
+                        width: 25%;
+                        color: $font-color;
+                        font-size: 1em;
+                        img {
+                            width: 1.5em;
+                        }
+                    }
+                }
+            }
+            .description {
+                width: 100%;
+                h3 {
+                    color: $font-color;
+                    text-decoration: underline;
+                    text-decoration-color: $primary-color;
+                    text-decoration-thickness: 15%;
+                    margin-bottom: 10%;
+                    font-size: 1.3rem;
+                }
+                h4 {
+                    color: $font-color;
+                    line-height: 1.5em;
+                    padding-bottom: 8%;
+                    font-size: 0.8rem;
+                    border-bottom: 2px solid $tertiary-color;
+                }
+                h5 {
+                    padding-top: 8%;
+                    color: $font-color;
+                    line-height: 1.5em;
+                    margin-bottom: 20%;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 10%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .image {
+            height: 15vw;
+            width: 15vw;
+            .heart {
+                width: 20vw;
+                height: 20vw;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        .button {
+            height: 100%;
+            width: 75vw;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+}
