@@ -10,15 +10,15 @@
 </head>
 <body class="track">
     <header>
-        <div class="back-button">
-            <img src="images/back.svg" alt="">
-            <a href="">Go back</a>
+        <div class="button">
+            <button class="back-button" onclick="home();"><img src="images/back.svg" alt=""> Go Back</button>
         </div>
         <h1>Delivery Status</h1>
     </header>
     <section class="content">
+        <div class="dashed"></div>
         <div class="line">
-            <div class="image">
+            <div class="image" style="background-color: #FFFAEB;">
                 <img src="images/customer-order.png" alt="">
             </div>
             <div class="description">
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="line">
-            <div class="image">
+            <div class="image" style="background-color: #F1EFF6;">
                 <img src="images/order-prepare.png" alt="">
             </div>
             <div class="description">
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="line">
-            <div class="image">
+            <div class="image" style="background-color: #FEF0F0;">
                 <img src="images/delivery-man-riding-red-scooter.png" alt="">
             </div>
             <div class="description">
@@ -49,6 +49,20 @@
             </div>
             <div class="ok">
                 <img src="images/call.png" alt="">
+            </div>
+        </div>
+        <div class="map">
+            <img src="images/map.png" alt="">
+        </div>
+        <div class="line">
+            <div class="image" style="background-color: #FEF0F0;">
+                <img src="images/concluded.png" alt="">
+            </div>
+            <div class="description">
+                <h2>Order Received</h2>
+            </div>
+            <div class="ok">
+                <img src="images/finalized.png" alt="">
             </div>
         </div>
     </section>

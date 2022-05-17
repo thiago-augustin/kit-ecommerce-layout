@@ -133,8 +133,8 @@ body {
 }
 
 .loading .loading-image {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .loading .loading-image .logo {
@@ -384,6 +384,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,6 +541,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -609,14 +611,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 0.5em;
-  left: 0.5em;
+  bottom: 0.2em;
+  left: 0.2em;
 }
 
 .home .slider .card .info .price .money {
   height: 0.9em;
   position: absolute;
-  left: 0.5em;
+  left: 0.2em;
   bottom: 0.5em;
 }
 
@@ -631,8 +633,8 @@ body {
 .home .slider .card .info .more {
   position: absolute;
   height: 2em;
-  right: 0.5em;
-  bottom: 0.5em;
+  right: 0.2em;
+  bottom: 0.2em;
 }
 
 .home .slider .card:nth-of-type(1) {
@@ -1170,28 +1172,36 @@ body {
   height: 3em;
 }
 
+.track {
+  width: 100vw;
+  height: 100vh;
+}
+
 .track header {
   background-color: #FFA451;
   position: absolute;
   right: 0;
   top: 0;
   width: 100%;
-  height: 15vh;
+  height: 15%;
 }
 
-.track header .back-button {
+.track header .button .back-button {
   border: none;
-  width: 20vw;
-  height: 4vh;
+  width: 22vw;
+  height: 2.5em;
   background-color: #FFFFFF;
   border-radius: 50px;
-  position: relative;
-  left: 2vw;
-  top: 5.5vh;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-size: 0.8em;
 }
 
-.track header .back-button img {
-  height: 60%;
+.track header .button .back-button img {
+  height: 40%;
   position: absolute;
   left: 10%;
   top: 50%;
@@ -1199,28 +1209,100 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.track header .back-button a {
-  width: 20vw;
-  position: absolute;
-  left: 13.5vw;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #000000;
-  text-decoration: none;
-}
-
 .track header h1 {
-  font-size: 1.8em;
   color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 1.3em;
   font-weight: 500;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.track .content {
+  padding-top: 15vh;
+  margin: 5%;
+  width: 90%;
+  height: 80%;
+}
+
+.track .content .dashed {
+  z-index: -1;
+  border-left: 3px dashed #FFA451;
+  margin-left: 10%;
+  width: 30%;
+  height: 130vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.track .content .line {
+  width: 100%;
+  height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8%;
+}
+
+.track .content .line .image {
+  width: 20vw;
+  height: 100%;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+}
+
+.track .content .line .image img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.track .content .line .description {
+  width: 60vw;
+}
+
+.track .content .line .description h2 {
+  font-size: 16px;
+}
+
+.track .content .line .description h3 {
+  font-size: 12px;
+}
+
+.track .content .line .ok {
+  width: 20vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.track .content .map {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+  padding-bottom: 8%;
+}
+
+.track .content .map img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

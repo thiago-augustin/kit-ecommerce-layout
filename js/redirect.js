@@ -22,3 +22,8 @@ function basket() {
     console.log("Redirecionado");
     window.location.href = 'http://127.0.0.1:5500/order.html?#';
 }
+
+function track() {
+    console.log("Redirecionado");
+    window.location.href = 'http://127.0.0.1:5500/track.html?#';
+}
