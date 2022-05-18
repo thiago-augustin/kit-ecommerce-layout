@@ -512,7 +512,6 @@ body {
 }
 
 .home .slider {
-  background-color: black;
   width: 100%;
   overflow: scroll;
   display: -webkit-box;
@@ -861,7 +860,7 @@ body {
   z-index: 10;
   margin-top: 40vh;
   position: relative;
-  height: 60vh;
+  height: 70vh;
   background-color: white;
 }
 
@@ -955,9 +954,9 @@ body {
 .order .modal-card .modal-content {
   border-radius: 20px 20px 0 0;
   z-index: 10;
-  margin-top: 40vh;
+  margin-top: 35vh;
   position: relative;
-  height: 60vh;
+  height: 65vh;
   background-color: white;
 }
 
@@ -1324,6 +1323,7 @@ body {
 }
 
 .add header .button .back-button {
+  z-index: 1;
   border: none;
   width: 22vw;
   height: 2.5em;
